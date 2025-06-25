@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Android Game Download</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <style>
+    /* Improved responsive design */
+    .game-card {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      min-height: 250px;
+    }
+    .game-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .game-card-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 12px;
+    }
+    
+    /* Better mobile adaptation */
+    @media (max-width: 640px) {
+      .game-card img {
+        height: 120px;
+      }
+      .game-card {
+        min-height: 200px;
+      }
+    }
+    
+    /* Ensure buttons are always visible */
+    .download-btn {
+      display: block;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+  <!-- Header -->
+  <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Games Hub</h1>
+    </div>
+  </header>
+
+  <!-- Top Ad -->
+  <div class="bg-gray-800 text-center py-2 text-gray-400 text-sm">
+    <i class="fas fa-ad mr-2"></i>Advertisement Banner (728x90)
+  </div>
+
+  <!-- Game Cards -->
+  <main class="container mx-auto px-4 py-6">
+    <div class="grid grid-cols-2 gap-4">
+      <!-- Limbo Card -->
+      <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg game-card">
+        <img src="1.jpg.jpg" alt="Limbo">
+        <div class="game-card-content">
+          <h2 class="text-base font-bold">LAW SCHOOL</h2>
+          <a href="https://wildgames.github.io/lawschool/" class="download-btn w-full text-center py-2 bg-green-600 hover:bg-green-700 rounded text-white font-semibold text-sm">
+            <i class="fas fa-download mr-1"></i>Download
+          </a>
+        </div>
+      </div>
+      
+      <!-- GTA 5 Card 
+      <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg game-card">
+        <img src="https://images.unsplash.com/photo-1607853202273-797f1c22a38e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="GTA 5">
+        <div class="game-card-content">
+          <h2 class="text-base font-bold">GTA 5 Mobile</h2>
+          <a href="https://yourdownloadlink.com" class="download-btn w-full text-center py-2 bg-green-600 hover:bg-green-700 rounded text-white font-semibold text-sm">
+            <i class="fas fa-download mr-1"></i>Download
+          </a>
+        </div>
+      </div>
+    </div>-->
+  </main>
+
+  <!-- Bottom Ad -->
+  <div class="bg-gray-800 text-center py-2 text-gray-400 text-sm sticky bottom-0">
+    <i class="fas fa-ad mr-2"></i>Bottom Advertisement (728x90)
+  </div>
+</body>
+</html>
